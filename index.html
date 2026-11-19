@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Liva | Kozmetik</title>
+  <meta name="description" content="The Liva cilt bakım ürünleri. Retinal, peptit ve panthenol içeren formüller.">
+  <meta property="og:title" content="The Liva">
+  <meta property="og:description" content="The Liva cilt bakım ürünleri">
+  <meta property="og:image" content="https://the-liva.com/assets/img/products/retinal-shot/1.webp">
+  <link rel="canonical" href="https://the-liva.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#urunler" data-i18n="skip">İçeriğe geç</a>
+
+  <header class="wrap header">
+    <a href="#" class="logo" aria-label="The Liva ana sayfa">The Liva</a>
+    <nav aria-label="Ana menü" class="nav">
+      <a href="#urunler" data-i18n="nav.products">Ürünler</a>
+      <a href="#hakkimizda" data-i18n="nav.about">Hakkımızda</a>
+      <a href="#iletisim" data-i18n="nav.contact">İletişim</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Dil / Language">
+      <button type="button" data-lang="tr" aria-pressed="true">TR</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap">
+      <div class="hero">
+        <div class="hero-text">
+          <h1 data-i18n="hero.title">Doğadan ilham alan bakım</h1>
+          <p data-i18n="hero.text">Aktif içeriklerle desteklenen formüller ile daha pürüzsüz, sıkı ve dengeli bir cilt görünümü.</p>
+          <a href="#urunler" class="btn" data-i18n="hero.cta">Ürünleri keşfet</a>
+        </div>
+        <div class="hero-img">
+          <img src="assets/img/products/retinal-shot/1.webp" alt="The Liva Retinal Shot tüp ve kutusu" width="533" height="800" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section id="urunler" class="wrap section">
+      <h2 data-i18n="products.title">Ürünlerimiz</h2>
+      <div class="grid" id="product-grid"></div>
+    </section>
+
+    <section id="hakkimizda" class="wrap section">
+      <div class="band">
+        <h2 data-i18n="about.title">Hakkımızda</h2>
+        <p data-i18n="about.text">The Liva, aktif içerikleri doğru oranlarda bir araya getiren cilt bakım ürünleri geliştirir. Ürünlerimiz hayvanlar üzerinde test edilmez.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="iletisim" class="wrap footer">
+    <span class="logo">The Liva</span>
+    <div class="col">
+      <strong data-i18n="contact.title">İletişim</strong>
+      <a href="mailto:info@the-liva.com">info@the-liva.com</a>
+      <a href="https://www.instagram.com/thelivaturkiye/" rel="noopener" target="_blank">Instagram: @thelivaturkiye</a>
+    </div>
+    <p class="copy">© <span id="year">2026</span> The Liva</p>
+  </footer>
+
+  <dialog id="product-dialog" aria-labelledby="pd-title">
+    <button type="button" class="close" aria-label="Kapat" data-close>
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="pd">
+      <div class="pd-gallery">
+        <img id="pd-main" src="" alt="">
+        <div class="pd-thumbs" id="pd-thumbs"></div>
+      </div>
+      <div class="pd-info">
+        <h2 id="pd-title"></h2>
+        <p id="pd-tagline" class="muted"></p>
+        <h3 data-i18n="pd.benefits">Faydaları</h3>
+        <ul id="pd-benefits"></ul>
+        <h3 data-i18n="pd.ingredients">Öne çıkan içerikler</h3>
+        <ul id="pd-ingredients"></ul>
+        <h3 data-i18n="pd.usage">Kullanım</h3>
+        <p id="pd-usage"></p>
+        <a id="pd-buy" class="btn" href="#" target="_blank" rel="noopener" data-i18n="buy">Trendyol'da satın al</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
