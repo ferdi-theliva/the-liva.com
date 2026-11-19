@@ -252,6 +252,11 @@
     Array.prototype.forEach.call(document.querySelectorAll("[data-lang]"), function (b) {
       b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false");
     });
+    Array.prototype.forEach.call(document.querySelectorAll("img[data-src-en]"), function (img) {
+      if (!img.hasAttribute("data-alt-tr")) img.setAttribute("data-alt-tr", img.alt);
+      img.src = img.getAttribute("data-src-" + lang);
+      img.alt = img.getAttribute("data-alt-" + lang);
+    });
     renderGrid();
     buildDots();
     if (current !== null && dialog.open) fillProduct();
