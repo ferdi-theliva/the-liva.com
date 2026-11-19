@@ -120,7 +120,6 @@
       var more = el("button", { type: "button", "class": "btn" }, T[lang].details);
       more.addEventListener("click", function () { openProduct(i); });
       actions.appendChild(more);
-      actions.appendChild(el("a", { "class": "btn btn-outline", href: p.url, target: "_blank", rel: "noopener" }, T[lang].buy));
       card.appendChild(actions);
       grid.appendChild(card);
     });
@@ -150,7 +149,6 @@
     document.getElementById("pd-title").textContent = c.name;
     document.getElementById("pd-tagline").textContent = c.tagline;
     document.getElementById("pd-usage").textContent = c.usage;
-    document.getElementById("pd-buy").href = p.url;
     fillList("pd-benefits", c.benefits);
     fillList("pd-ingredients", c.ingredients);
     var thumbs = document.getElementById("pd-thumbs");
